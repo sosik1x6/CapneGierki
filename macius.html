@@ -9261,7 +9261,7 @@ function drawRealisticTree(x, y, scale, rot, isBackground, hasLeaves) {
             // 4. DROP SYSTEM (Z czasami życia)
             
             // 1. Amunicja (Szansa zależna od stanu magazynka)
-            let ammoChance = 0.2; // Bazowa szansa (20%)
+            let ammoChance = 0.1; // Bazowa szansa (10%)
 
             if (player.sniperAmmo >= 5 && player.sniperAmmo <= 9) ammoChance *= 0.5;  // 10% szansy
             if (player.sniperAmmo >= 10 && player.sniperAmmo <= 15) ammoChance *= 0.25; // 2.5% szansy
@@ -9280,7 +9280,7 @@ function drawRealisticTree(x, y, scale, rot, isBackground, hasLeaves) {
             if (Math.random() < 0.1) {
                 medkitPickups.push({
                     x: boar.x, y: boar.y, 
-                    life: 300,
+                    life: 100,
                     pulsePhase: 0
                 });
             }
